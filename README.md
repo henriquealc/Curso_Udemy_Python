@@ -1,2 +1,2 @@
 # Curso de Python Udemy
- Curso de Python da Udemy em andamento
+ Curso em andamento de Python pela Udemy
