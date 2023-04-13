@@ -11,7 +11,9 @@ while True:
     print('='*35)
     calculo = input('Informe o operador que deseja (+,*,/,-): ')
     
-    if calculo not in '+''-''/''*''-':
+    if num or num2 is None:
+        print('Um ou mais números digitados são inválidos.')    
+    elif calculo not in '+''-''/''*''-':
         print('Insira uma opção válida.')
     elif calculo == '+':
         resultado = num + num2
