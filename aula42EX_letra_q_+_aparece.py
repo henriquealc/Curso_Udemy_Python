@@ -1,4 +1,4 @@
-frase = input('Insira uma frase: ').upper()
+frase = input('Insira uma frase: ').upper
 
 i = 0
 qtd_apareceu_mais_vezes= 0
@@ -23,5 +23,3 @@ print('A letra que apareceu mais vezes foi '
       f'"{letra_aparareceu_mais_vezes}" que apareceu '
       f'{qtd_apareceu_mais_vezes}x'
       )
-
-
