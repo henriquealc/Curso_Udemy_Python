@@ -26,7 +26,7 @@ while True:
     print(f'Palavra formada: {palavra_formada}')
 
     if palavra_formada == texto:
-        os.system('clear')
+        os.system('clear') # Usado para limpar a tela 
         print('VOCÊ GANHOU!!! PARABÉNS!!')
         print(f'A palavra era {texto}')
         print(f'Você efetuou {tentativas} tentativas!')
