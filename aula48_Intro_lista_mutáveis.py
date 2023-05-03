@@ -47,3 +47,34 @@ do elemento e não pelo indice.'''
 lista = ['Maria', 'José', 'João', 'Pedro']
 lista[lista.index('José')] = 'Joana'
 print(lista)  # ['Maria', 'Joana', 'João', 'Pedro']
+
+
+
+ 
+
+"""
+Listas em Python
+Tipo list - Mutável
+Suporta vários valores de qualquer tipo
+Conhecimentos reutilizáveis - índices e fatiamento
+Métodos úteis:
+    append - Adiciona um item ao final
+    insert - Adiciona um item no índice escolhido
+    pop - Remove do final ou do índice escolhido
+    del - apaga um índice
+    clear - limpa a lista
+    extend - estende a lista
+    + - concatena listas
+Create Read Update   Delete
+Criar, ler, alterar, apagar = lista[i] (CRUD)
+"""
+
+#........0...1...2...3
+lista = [10, 20, 30, 40]
+lista.append('Luiz') # Adiciona o nome 'Luiz' na lista
+nome = lista.pop() # Pega o último elemento para poder fazer algo com ele
+lista.append(1233) # Adiciona os números na lista
+del lista[-1] # Deleta o último item da lista
+#lista.clear() # Limpa toda a lista
+lista.insert(100, 5) # Adiona um item na lista no local escolhido.
+print(lista[4])
