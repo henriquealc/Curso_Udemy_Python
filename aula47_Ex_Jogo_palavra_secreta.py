@@ -1,5 +1,5 @@
 import os
-texto = 'sabedoria'
+texto = 'jacare'
 tentativas = 0
 letras_acertadas = ''
 

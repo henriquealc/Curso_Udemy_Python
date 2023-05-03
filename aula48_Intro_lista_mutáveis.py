@@ -47,4 +47,3 @@ do elemento e não pelo indice.'''
 lista = ['Maria', 'José', 'João', 'Pedro']
 lista[lista.index('José')] = 'Joana'
 print(lista)  # ['Maria', 'Joana', 'João', 'Pedro']
- 
