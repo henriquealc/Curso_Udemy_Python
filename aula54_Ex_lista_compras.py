@@ -7,18 +7,18 @@ erros de índices inexistentes na lista.
 """
 
 '''RESOLUÇÃO FEITA POR MIM'''
-#import os
+import os
 lista = [] # Sempre criar a variavel lista fora da estrutura de repetição
-num = -1
+
 
 while True:
     opcao = input('Selecione uma opção: \n[i]nserir [a]apagar [l]istar s[air]: ').lower()
     if opcao == 'i':
-        #os.system('clear')
+        os.system('cls')
         inserir = input('Valor: ')
         lista.append(inserir)
     elif opcao == 'a':
-        #os.system('clear')
+        os.system('cls')
         apagar = input('Digite o indice que deseja apagar: ')
         
         try:
@@ -33,16 +33,15 @@ while True:
         except Exception:
             print('Erro desconhecido')
     elif opcao == 'l':
-        #os.system('clear')
+        os.system('cls')
         print(lista) # Informa a lista e os itens que contém nela
         
         if len(lista) == 0:
             print('Nada para listar')
         
+        for i, valor in enumerate(lista):
+            print(i, valor)
         # mostra os indices da lista
-        for inserir in lista: 
-            num +=1
-            print(num, inserir)
     elif opcao == 's':
         print('Programa encerrado com sucesso, Obrigado!')
         break
