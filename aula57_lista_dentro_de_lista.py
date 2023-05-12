@@ -1,3 +1,7 @@
+'''
+Lista de listas e seus índices
+'''
+
 salas = [ 
         #  0........1....
         ['Maria', 'Helena'],  # 0 
