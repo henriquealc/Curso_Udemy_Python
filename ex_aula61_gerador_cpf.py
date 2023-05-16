@@ -1,5 +1,5 @@
 import sys
-import re
+import re # importa a biblioteca 're' e usa o metódo 'sub' para remover algumas coisas digitadas pelo usuario
 
 #74682489070
 contador_regressivo = 10
@@ -7,21 +7,21 @@ resultado_digito_1 = 0
 
 
 while True:
-    cpf_entrada = input('Informe o CPF para saber se é válido: ').replace('.', '').replace('-', '').replace(' ','') # Substitui os espaços, ponto e virgula.
+    cpf_entrada = input('Informe o CPF para saber se é válido: ')  #.replace('.', '').replace('-', '').replace(' ','') # Substitui os espaços, ponto e virgula.
     
     # So pega os números e remove tudo aquilo que não é número
     cpf_enviado = re.sub(
-        r'[^0-9]',
-        '',
+        r'[^0-9]' # Substitui tudo que é número de 0 a 9
+        , '', 
         cpf_entrada
     )
-    
-    '''Não entendi essa parte, rever video da aula'''    
-    # entrada_e_sequencial = entrada == entrada[0] * len(entrada)
+     
+    # Feito para evitar que o usuario digite numeros ou letras sequencias Ex: 11111111 ou aaaaaaa   
+    entrada_e_sequencial = cpf_entrada == cpf_entrada[0] * len(cpf_entrada)
 
-    # if entrada_e_sequencial:
-    #     print('Você enviou dados sequenciais.')
-    #     sys.exit()
+    if entrada_e_sequencial:
+        print('Você enviou dados sequenciais.')
+        sys.exit() # Mata o codigo, para o programa
     
     nove_digitos = cpf_enviado[:9] # fazendo o fatiamento
     
