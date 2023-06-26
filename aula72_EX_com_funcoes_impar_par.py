@@ -26,23 +26,43 @@ da variável.
 Crie uma função que fala se um número é par ou impar.
 Retorne se o número é par ou impar.
 '''
-from time import sleep
+# from time import sleep
 
-while True:
-    def par_impar():    
-        num = int(input('Informe um número para saber se ele é par ou impar: '))
-        if num % 2 == 0:
-            print(f'O número {num} é PAR.')
-        else:
-            print(f'O número {num} é IMPAR.')
+# while True:
+#     def par_impar():    
+#         num = int(input('Informe um número para saber se ele é par ou impar: '))
+#         if num % 2 == 0:
+#             print(f'O número {num} é PAR.')
+#         else:
+#             print(f'O número {num} é IMPAR.')
 
 
-    num = par_impar()
+#     num = par_impar()
 
-    sair = input('Deseja sair? [S/N]: ').lower()
-    if sair == 's':       
-        print('-=' * 25)
-        print('Encerrando programa...')
-        sleep(1.0)
-        print('Programa encerrado com sucesso, Obrigado!')
-        break
+#     sair = input('Deseja sair? [S/N]: ').lower()
+#     if sair == 's':       
+#         print('-=' * 25)
+#         print('Encerrando programa...')
+#         sleep(1.0)
+#         print('Programa encerrado com sucesso, Obrigado!')
+#         break
+
+
+
+
+
+
+
+'''Resolução feita pelo professor'''
+
+def par_impar(numero):
+    multiplo_de_dois = numero % 2 == 0
+    
+    if multiplo_de_dois:
+        return f'{numero} é par'
+    return f'{numero} é impar'
+
+print(par_impar(2))
+print(par_impar(3))
+print(par_impar(15))
+print(par_impar(16))
