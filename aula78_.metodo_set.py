@@ -49,11 +49,7 @@ s1.add(1) # so pode adicionar um valor por vez
 s1.update(('Olá mundo', 1, 2, 3, 4)) #adiciona os valores sem bagunça as letras
 # s1.clear() # limpa todo o set
 s1.discard('Olá mundo') # descarta o valor passado, so pode passar 1 argumento por vez
-print(s1)
-
-
-
-
+# print(s1)
 
 
 
@@ -62,3 +58,11 @@ print(s1)
 # intersecção & (intersection) - Itens presentes em ambos
 # diferença - Itens presentes apenas no set da esquerda
 # diferença simétrica ^ - Itens que não estão em ambos
+
+s1 = {1, 2, 3}
+s2 = {2, 3, 4}
+s3 = s1 | s2  # Une os sets, mas não repeti os valores iguais
+s3 = s1 & s2  # Retor os itens presentes em ambos os sets
+s3 = s2 - s1  # Retorna os itens presentes apenas no set da esquerda (a ordem importa)
+s3 = s1 ^ s2  # Retorna os itens que não esta presente em ambos 
+print(s3)
