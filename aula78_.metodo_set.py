@@ -25,10 +25,10 @@
 # print(s1)
 
 '''Remove os valores repetidos, os sets não garantem a ordem'''
-# l1 = [1, 2, 3, 3, 3, 3, 3, 1]
-# s1 = set(l1)
-# l2 = list(s1)
-# print(l2)
+l1 = [1, 2, 3, 3, 3, 3, 3, 1]
+s1 = set(l1)
+l2 = list(s1)
+print(l2)
 
 # formas de verificar se tem o valor dentro do set
 # s1 = {1, 2, 3}
