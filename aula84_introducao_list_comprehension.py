@@ -4,6 +4,10 @@ List comprehension é uma forma rápida
 para criar listas a partir de iteráveis.
 '''
 
+import pprint
+def p(v):
+    pprint.pprint(v, sort_dicts=False, width=40)
+
 # print(list(range(10))) # Cria uma lista de 0 a 9.
 
 # lista = []
@@ -35,8 +39,24 @@ novos_produtos = [
 ]
 
 # print(novos_produtos)
-print(*novos_produtos, sep='\n') # Faz os desempacotamentos dos produtos
+# print(novos_produtos)
+# p(novos_produtos)
+#print(*novos_produtos, sep='\n') # Faz os desempacotamentos dos produtos
+
+# Cria um filtro
+# # Filtro o if sempre vem depois do for
+# lista = [n for n in range(10) if n < 5]
+# print(lista)
 
 
+''' O que vem na esquerda do for é mapiamento e o que vem a direira
+ do for é filtro'''
+novos_produtos = [
+    {**produtos, 'preco': produto['preco'] * 1.05}
+    if produto['preco'] > 20 else {**produto}
+    for produto in produtos
+    if (produto ['preco'] >= 20 and produto['preco'] * 1.05) > 10 
+] 
 
+p(novos_produtos)
 
