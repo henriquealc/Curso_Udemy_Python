@@ -8,7 +8,7 @@ for item in lista:
     if isinstance(item, set):  # Mostra quais são os tipos dos items que estão dentro da lista
         print('SET')
         item.add(5) # Adiciona o número 5 dentro do elemento do tipo set
-        print(item, isinstance(item, set))
+        print(item)
     
     elif isinstance(item, str): # Verifica quais são os items do tipo string
         print('STR') 
