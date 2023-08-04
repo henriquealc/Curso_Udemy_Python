@@ -52,7 +52,7 @@ novos_produtos = [
 ''' O que vem na esquerda do for é mapiamento e o que vem a direira
  do for é filtro'''
 novos_produtos = [
-    {**produtos, 'preco': produto['preco'] * 1.05}
+    {**produto, 'preco': produto['preco'] * 1.05}
     if produto['preco'] > 20 else {**produto}
     for produto in produtos
     if (produto ['preco'] >= 20 and produto['preco'] * 1.05) > 10 
