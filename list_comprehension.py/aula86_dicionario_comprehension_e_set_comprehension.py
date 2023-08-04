@@ -32,7 +32,7 @@ lista = [
 #     for chave, valor in lista
 # }
 
-# Consegui converter uma lista em um dicionario quando tem valor e chave
+# É possivel converter uma lista em um dicionario quando tem valor e chave
 # print(dict(lista)) 
 
 # print(dc)
