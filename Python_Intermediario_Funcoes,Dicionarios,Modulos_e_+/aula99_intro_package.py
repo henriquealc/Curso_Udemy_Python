@@ -20,3 +20,6 @@ print(soma_valores(1, 2))
 # Usando o all
 print(variavel)
 print(nova_variavel)
+
+# import aula99_package.modulo
+# print(soma_valores(2, 5))
