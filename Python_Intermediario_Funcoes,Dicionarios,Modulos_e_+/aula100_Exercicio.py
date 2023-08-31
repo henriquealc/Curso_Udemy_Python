@@ -4,13 +4,9 @@
 # Gere novos_produtos por deep copy (cópia profunda)
 import copy
 
-produtos = [
-    {'nome': 'Produto 5', 'preco': 10.00},
-    {'nome': 'Produto 1', 'preco': 22.32},
-    {'nome': 'Produto 3', 'preco': 10.11},
-    {'nome': 'Produto 2', 'preco': 105.87},
-    {'nome': 'Produto 4', 'preco': 69.90},
-]
+# importa os dados da lista produtos que esta na pasta dados
+from dados import produtos
+
 print('LISTA DE PRODUTOS'.center(50))
 print('=-' * 30)
 print(*produtos, sep='\n')
@@ -21,7 +17,7 @@ print('PRODUTOS COM 10% DE AUMENTO'.center(50))
 print('=-' * 30)
 novos_produtos = copy.deepcopy(produtos)
 for produto in novos_produtos:
-    produto['preco'] = produto['preco'] + (produto['preco'] * 0.10)
+    produto['preco'] = round(produto['preco'] + (produto['preco'] * 0.10), 2) # round usado para colocar 2 casas decimais
     print(produto)
 
 
